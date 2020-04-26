@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   spec.description  = "Calculates the global offset for all screen sizes by depending on given screen size and given offset."
 
-  spec.homepage     = "http://github.com/BayKit"
+  spec.homepage     = "http://github.com/BayCem/BayKit"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -64,7 +64,7 @@ Pod::Spec.new do |spec|
 
   spec.platform      = :ios
   spec.platform      = :ios, "11.0"
-  spec.swift_verison = "5.0"
+  spec.swift_version = "5.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { 
-      :git => "http://github.com/BayCem/BayKit.git", 
+      :git => "https://github.com/BayCem/BayKit.git", 
       :tag => "#{spec.version}" }
 
 
