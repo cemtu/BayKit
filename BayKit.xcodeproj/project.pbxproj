@@ -8,12 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		75F7460124562156002AA4EC /* BayKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 75F745FF24562156002AA4EC /* BayKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75F7460A245621DA002AA4EC /* Bay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F74609245621DA002AA4EC /* Bay.swift */; };
+		75F74612245627EB002AA4EC /* BayKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F74611245627EB002AA4EC /* BayKitTests.swift */; };
+		75F74614245627EB002AA4EC /* BayKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F745FC24562156002AA4EC /* BayKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75F74615245627EB002AA4EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F745F324562155002AA4EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F745FB24562156002AA4EC;
+			remoteInfo = BayKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		75F745FC24562156002AA4EC /* BayKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BayKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F745FF24562156002AA4EC /* BayKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BayKit.h; sourceTree = "<group>"; };
 		75F7460024562156002AA4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F74609245621DA002AA4EC /* Bay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bay.swift; sourceTree = "<group>"; };
+		75F7460F245627EB002AA4EC /* BayKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BayKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F74611245627EB002AA4EC /* BayKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BayKitTests.swift; sourceTree = "<group>"; };
+		75F74613245627EB002AA4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -24,6 +41,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		75F7460C245627EB002AA4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F74614245627EB002AA4EC /* BayKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -31,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				75F745FE24562156002AA4EC /* BayKit */,
+				75F74610245627EB002AA4EC /* BayKitTests */,
 				75F745FD24562156002AA4EC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				75F745FC24562156002AA4EC /* BayKit.framework */,
+				75F7460F245627EB002AA4EC /* BayKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +75,18 @@
 			children = (
 				75F745FF24562156002AA4EC /* BayKit.h */,
 				75F7460024562156002AA4EC /* Info.plist */,
+				75F74609245621DA002AA4EC /* Bay.swift */,
 			);
 			path = BayKit;
+			sourceTree = "<group>";
+		};
+		75F74610245627EB002AA4EC /* BayKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				75F74611245627EB002AA4EC /* BayKitTests.swift */,
+				75F74613245627EB002AA4EC /* Info.plist */,
+			);
+			path = BayKitTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,16 +121,39 @@
 			productReference = 75F745FC24562156002AA4EC /* BayKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		75F7460E245627EB002AA4EC /* BayKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F74617245627EB002AA4EC /* Build configuration list for PBXNativeTarget "BayKitTests" */;
+			buildPhases = (
+				75F7460B245627EB002AA4EC /* Sources */,
+				75F7460C245627EB002AA4EC /* Frameworks */,
+				75F7460D245627EB002AA4EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75F74616245627EB002AA4EC /* PBXTargetDependency */,
+			);
+			name = BayKitTests;
+			productName = BayKitTests;
+			productReference = 75F7460F245627EB002AA4EC /* BayKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		75F745F324562155002AA4EC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Cem Tunçelli";
 				TargetAttributes = {
 					75F745FB24562156002AA4EC = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+					};
+					75F7460E245627EB002AA4EC = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -111,12 +171,20 @@
 			projectRoot = "";
 			targets = (
 				75F745FB24562156002AA4EC /* BayKit */,
+				75F7460E245627EB002AA4EC /* BayKitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		75F745FA24562156002AA4EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F7460D245627EB002AA4EC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -130,10 +198,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F7460A245621DA002AA4EC /* Bay.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F7460B245627EB002AA4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F74612245627EB002AA4EC /* BayKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75F74616245627EB002AA4EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F745FB24562156002AA4EC /* BayKit */;
+			targetProxy = 75F74615245627EB002AA4EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		75F7460224562156002AA4EC /* Debug */ = {
@@ -261,6 +346,7 @@
 		75F7460524562156002AA4EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cemtuncelli.BayKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +373,7 @@
 		75F7460624562156002AA4EC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -308,6 +396,42 @@
 			};
 			name = Release;
 		};
+		75F74618245627EB002AA4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4A6RAJX45;
+				INFOPLIST_FILE = BayKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemtuncelli.BayKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		75F74619245627EB002AA4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W4A6RAJX45;
+				INFOPLIST_FILE = BayKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cemtuncelli.BayKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -325,6 +449,15 @@
 			buildConfigurations = (
 				75F7460524562156002AA4EC /* Debug */,
 				75F7460624562156002AA4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F74617245627EB002AA4EC /* Build configuration list for PBXNativeTarget "BayKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F74618245627EB002AA4EC /* Debug */,
+				75F74619245627EB002AA4EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
