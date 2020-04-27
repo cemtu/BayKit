@@ -49,7 +49,7 @@ class MyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(box)
-        box.leadingAnchor.constraint(equalTo: view.trailingAnchor, constant: magicOffset.offseter(scaleFactor: 1.0, 
+        box.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: magicOffset.offseter(scaleFactor: 1.0, 
         offset: 24, direction: .horizontal, currentDeviceBound: BayKit.DeviceList.iPhone5.screenWidth)).isActive = true
     }
 }
