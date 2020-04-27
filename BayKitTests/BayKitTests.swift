@@ -37,7 +37,7 @@ class BayKitTests: XCTestCase {
         let currentScreen = UIScreen.main.bounds
         let expectedOutput = (24 * currentScreen.width * 1.0) / DeviceList.iPhone5.screenWidth
         
-        let res = bayKit.offseter(scaleFactor: 1.0, offset: 24, direction: .horizontal, currentDeviceBound: DeviceList.iPhone5.screenWidth)
+        let res = bayKit.offseter(scaleFactor: 1.0, offset: 24, direction: .horizontal, currentDeviceBound: BayKit.DeviceList.iPhone5.screenWidth)
         XCTAssertEqual(res, expectedOutput)
     }
 
