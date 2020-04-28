@@ -2,23 +2,35 @@
 
 ## Table of Contents
 
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 
 ---
 
-## Installation
+## Features
 
+![Image description](https://i.ibb.co/ZNXpNkK/Screen-Shot-2020-04-28-at-16-58-34.png)
+
+As you can see width and height constraints updated by depending on phone size.
+
+Without any extra code!
+
+---
+
+## Installation
 
 ### CocoaPods
 
 <a href="http://cocoapods.org/" target="_blank">CocoaPods</a> is a dependency manager for Cocoa projects. You can install it with the following command:
+
 ```shell
 $ gem install cocoapods
 ```
 
 To integrate BayKit into your Xcode project using CocoaPods, specify it in your `Podfile`:
+
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '10.0'
@@ -50,8 +62,8 @@ class MyViewController: UIViewController {
         super.viewDidLoad()
         view.addSubview(box)
         box.translatesAutoresizingMaskIntoConstraints = false
-        
-        box.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: magicOffset.offseter(scaleFactor: 1.0, 
+
+        box.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: magicOffset.offseter(scaleFactor: 1.0,
         offset: 24, direction: .horizontal, currentDeviceBound: BayKit.DeviceList.iPhone5.screenWidth)).isActive = true
     }
 }
@@ -64,10 +76,11 @@ class MyViewController: UIViewController {
 ### Step 1
 
 - **Option 1**
-    - Fork this repo.
+
+  - Fork this repo.
 
 - **Option 2**
-    - Clone this repo to your local machine using `https://github.com/BayCem/BayKit.git`
+  - Clone this repo to your local machine using `https://github.com/BayCem/BayKit.git`
 
 ### Step 2
 
